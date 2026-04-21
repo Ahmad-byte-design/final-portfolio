@@ -13,7 +13,7 @@ type Props = {
 
 export default function Carousel({ items, renderItem }: Props) {
 
-  const [ isMobiel , setIsMobiel ] = useState(window.innerWidth <= 720 ? true : false);
+  const [ isMobiel  ] = useState(window.innerWidth <= 720 ? true : false);
 
   return (
     <div className="w-full flex justify-center">
