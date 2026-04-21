@@ -7,7 +7,7 @@ function Nav() {
   return (
     <div className="relative w-full flex items-end justify-end">
 
-      <nav className="hidden md:block bg-primary relative rounded-bl-[99999px]">
+      <nav className="hidden md:block w-full bg-primary relative rounded-bl-[99999px]">
         <NavItems />
       </nav>
 
