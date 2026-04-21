@@ -19,7 +19,7 @@ function Header() {
   },[]);
 
   return (
-    <motion.div initial={{ y:-200  }} animate={{ y:0 }} className={`  ${ scroll > 300 ? "fixed top-0   " : "relative"} z-100 w-full backdrop-blur-md bg-primary/50 flex justify-between items-center`}>
+    <motion.div initial={{ y:-200  }} animate={{ y:0 }} className={`  ${ scroll > 300 ? "fixed top-0   bg-primary/50 " : "relative"} z-100 w-full backdrop-blur-md flex justify-between items-center`}>
       
       <Logo />
       <Nav />
