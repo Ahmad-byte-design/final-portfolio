@@ -1,15 +1,16 @@
 # Portfolio
 
-##HOW TO INSTALL IT
-###the first
+HOW TO INSTALL IT
+
+the first
 ```
 git clone https://github.com/Ahmad-byte-design/final-portfolio.git
 ```
-###the second
+the second
 ```
 npm install
 ```
-###then 
+then 
 ```
 npm run dev
 ```
