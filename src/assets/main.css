@@ -1,0 +1,153 @@
+@import "tailwindcss";
+/* @import "tw-animate-css"; */
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/oxanium";
+@import "@fontsource-variable/space-grotesk";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #F5F5F0;
+  --foreground: #0F0F10;
+
+  --card: #FFFFFF;
+  --card-foreground: #0F0F10;
+
+  --popover: #FFFFFF;
+  --popover-foreground: #0F0F10;
+
+  --primary: #fbbf24;
+  --primary-foreground: #0F0F10;
+
+  --secondary: #B8B8B0;
+  --secondary-foreground: #0F0F10;
+
+  --muted: #E6C767;
+  --muted-foreground: #1A1A1D;
+
+  --accent: #fbbf24;
+  --accent-foreground: #0F0F10;
+
+  --destructive: #B00020;
+
+  --border: rgb(26 26 29 / 0.15);
+  --input: rgb(26 26 29 / 0.2);
+  --ring: rgb(212 175 55 / 0.5);
+
+  --chart-1: #D4AF37;
+  --chart-2: #E6C767;
+  --chart-3: #B8B8B0;
+  --chart-4: #1A1A1D;
+  --chart-5: #0F0F10;
+
+  --radius: 0.625rem;
+
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #0F0F10;
+  --sidebar-primary: #D4AF37;
+  --sidebar-primary-foreground: #0F0F10;
+  --sidebar-accent: #E6C767;
+  --sidebar-accent-foreground: #0F0F10;
+  --sidebar-border: rgb(26 26 29 / 0.12);
+  --sidebar-ring: rgb(212 175 55 / 0.4);
+}
+
+.dark {
+  --background: #0F0F10;
+  --foreground: #F5F5F0;
+
+  --card: #1A1A1D;
+  --card-foreground: #F5F5F0;
+
+  --popover: #1A1A1D;
+  --popover-foreground: #F5F5F0;
+
+  --primary: #D4AF37;
+  --primary-foreground: #0F0F10;
+
+  --secondary: #B8B8B0;
+  --secondary-foreground: #0F0F10;
+
+  --muted: rgb(184 184 176 / 0.15);
+  --muted-foreground: #B8B8B0;
+
+  --accent: #E6C767;
+  --accent-foreground: #0F0F10;
+
+  --destructive: #ff4d4d;
+
+  --border: rgb(245 245 240 / 0.12);
+  --input: rgb(245 245 240 / 0.18);
+  --ring: rgb(212 175 55 / 0.45);
+
+  --chart-1: #D4AF37;
+  --chart-2: #E6C767;
+  --chart-3: #B8B8B0;
+  --chart-4: #F5F5F0;
+  --chart-5: #1A1A1D;
+
+  --sidebar: #1A1A1D;
+  --sidebar-foreground: #F5F5F0;
+  --sidebar-primary: #D4AF37;
+  --sidebar-primary-foreground: #0F0F10;
+  --sidebar-accent: #E6C767;
+  --sidebar-accent-foreground: #0F0F10;
+  --sidebar-border: rgb(245 245 240 / 0.12);
+  --sidebar-ring: rgb(212 175 55 / 0.4);
+}
+
+
+@theme inline {
+    --font-sans: 'Oxanium Variable', sans-serif;
+    --font-heading: 'Space Grotesk Variable', sans-serif;
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
